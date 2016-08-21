@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+  <title>Twitcher - a simple Twich.tv viewer</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans|Dosis"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="/" class="brand">Twitcher</a>
+    <ul>
+      <li><a href="#" id="nav-users">Users</a></li>
+      <li><a href="#" id="nav-featured-streams">Featured Streams</a></li>
+    </ul>
+    <ul class="push-right">
+      <li><a href="#" id="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="main-content" class="container">
+  </div>
+
+  <script type="text/javascript">
+    // Add promises to IE
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+      document.write('<script src="https://github.com/stefanpenner/es6-promise/blob/master/dist/lib/es6-promise.js"><\/script>');
+  }
+  </script>
+
+  <script src="js/req.js"></script>
+  <script src="js/twitchtv.js"></script>
+  <script src="js/twitcher.js"></script>
+  <script src="js/app.js"></script>
+</body>
